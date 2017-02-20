@@ -1,0 +1,85 @@
+/*
+* index css
+* auther zhiyan
+* website www.asni.cn*/
+@charset "UTF-8";
+*{margin: 0;padding: 0;font-family: 'Microsoft Yahei';color:#555;}
+ul,li,input{list-style: none;}
+a{text-decoration: none;}
+input,button,select,textarea{outline:none; border: 0;}
+body{background-color: #f6f6f6;}
+a:hover{color:#16a085;}
+.fleft{float: left;}
+.mr{margin-left: 30px;}
+.bs{box-shadow: 0px 0px 3px #ccc;}
+
+/*去除chrome浏览器私有表单自动填表样式*/
+input:-webkit-autofill{-webkit-box-shadow: 0 0 0px 1000px white inset;-webkit-text-fill-color: #333;}
+
+/* nav*/
+#maiden_logo{float: left;width: 100px;text-align: center;}
+#maiden_nav{width: auto; height: 80px;background-color: #2f2f2f; }
+ul.maiden_nav{float: left; }
+ul.maiden_nav > li{float: left;height: 80px; }
+ul.maiden_nav > li > a{color: #fff; font-size: 18px; display: inline-block; line-height: 80px; padding: 0 20px; }
+ul.maiden_nav > li > a:hover{background-color: #555;}
+/* search */
+#maiden_nav_search{width: 300px; float: right; margin-top: 20px;}
+#maiden_nav_search input{border: 2px #fff solid; padding: 0 10px; font-size: 14px; height: 40px; color: #16a085; }
+#maiden_nav_search input[type=submit]{margin-left: -5px; width: 60px; cursor:pointer; font-size: 14px; background-color: #16a085; color: #fff; }
+
+/* 这是针对缺省样式 (必须的) */
+::-webkit-scrollbar {width: 10px;}
+/* 滚动条的滑轨背景颜色 */
+::-webkit-scrollbar-track {background-color: #ccc;}
+/* 滑块颜色 */
+::-webkit-scrollbar-thumb {background-color: rgba(0, 0, 0, 0.2);}
+/* 滑轨两头的监听按钮颜色 */
+::-webkit-scrollbar-button {background-color: rgba(0, 0, 0, 0.2);}
+/* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+::-webkit-scrollbar-corner {background-color: black;}
+
+/* context*/
+#maiden_context{width: 1200px;margin: 30px auto;}
+
+#context_top{height: 300px;}
+/* 焦点图 */
+.context_top_l{position: relative; width: 790px; height: 300px; overflow: hidden; margin-right: 30px;}
+.l_banner{position:absolute; width:790px; height: 300px;}
+.l_banner ul{position:absolute; width: 3160px; height: 300px; z-index: 2;}
+.l_banner ul li{float: left; position: relative; width: 790px; height: 300px; overflow: hidden;}
+.l_banner ul li a{display: inline-block;}
+.l_banner ul li a img{width: 790px; height: auto;}
+.l_banner ul li span{position: absolute;left: 0;top: 260px; display: inline-block; width: 790px; height: 40px; background-color:rgba(0, 0, 0, 0.2);(); text-align: center; line-height: 40px; color: #efefef;}
+.l_navs{position: absolute; top: 0; left: 10px; z-index: 99;}
+.l_navs span{display: inline-block; width: 20px; height: 10px; margin: 0 3px; background-color: #efefef;}
+.l_navs span:hover{opacity: 0.8}
+span.n{background-color: #396;}
+/* 右侧table */
+.context_top_r{width: 378px; height: 298px; background-color: #fff; border: 1px #efefef solid;}
+ul.r_navs{height: 36px; border-bottom: 1px #efefef solid;}
+ul.r_navs li{float: left; font-size: 15px; padding:8px 10px; border: 1px #efefef solid;}
+ul.r_navs li{margin-top: -1px; margin-left: -1px;}
+ul.r_navs li.active{font-weight: bold; border-bottom: 1px #fff solid;}
+
+ul.r_context{padding: 15px;height: 230px; position: relative; overflow: hidden;}
+ul.r_context > li{position: absolute; width: 348px; }
+ul.r_context > li ul li{font-size: 12px; margin-bottom: 11px;width: 348px; height: 14px; //*这句是单行溢出省略*/overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+ul.r_context > li:first-child ul li:first-child a{font-weight: bold;}
+ul.r_context time{float: right;}
+
+
+
+
+#context_mid{margin: 30px 0; height: 200px;}
+.context_mid_t{width: 380px; height: 200px; background-color: #fff; float: left; }
+
+#context_c{margin-top: 30px;}
+.context_c_left{width: 790px;}
+.context_c_right{width: 380px;}
+.c_1{width: 790px; height: 600px; margin-bottom: 30px; background-color: #fff;}
+
+
+footer{width: 100%; height: 160px; background-color:#333; display: inline-block; margin-top: 20px; border-top: 1px #eaeaea solid;}
+#footer{width: 1200px; margin: 0 auto;}
+#footer a{color: #fff; display: inline-block; padding: 2px 4px; background-color:#16a085; font-size: 14px; margin-top: 20px; margin-right: 10px;}
