@@ -50,7 +50,7 @@ ul.maiden_nav > li > a:hover{background-color: #555;}
 .l_banner ul li{float: left; position: relative; width: 790px; height: 300px; overflow: hidden;}
 .l_banner ul li a{display: inline-block;}
 .l_banner ul li a img{width: 790px; height: auto;}
-.l_banner ul li span{position: absolute;left: 0;top: 260px; display: inline-block; width: 790px; height: 40px; background-color:rgba(0, 0, 0, 0.2);(); text-align: center; line-height: 40px; color: #efefef;}
+.l_banner ul li span{position: absolute;left: 0;top: 260px; display: inline-block; width: 790px; height: 40px; background-color:rgba(0, 0, 0, 0.6);(); text-align: center; line-height: 40px; color: #efefef;}
 .l_navs{position: absolute; top: 0; left: 10px; z-index: 99;}
 .l_navs span{display: inline-block; width: 20px; height: 10px; margin: 0 3px; background-color: #efefef;}
 .l_navs span:hover{opacity: 0.8}
@@ -64,21 +64,36 @@ ul.r_navs li.active{font-weight: bold; border-bottom: 1px #fff solid;}
 
 ul.r_context{padding: 15px;height: 230px; position: relative; overflow: hidden;}
 ul.r_context > li{position: absolute; width: 348px; }
-ul.r_context > li ul li{font-size: 12px; margin-bottom: 11px;width: 348px; height: 14px; //*这句是单行溢出省略*/overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+ul.r_context > li ul li{font-size: 12px; margin-bottom: 11px;width: 348px; height: 14px; /*这句是单行溢出省略*/overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 ul.r_context > li:first-child ul li:first-child a{font-weight: bold;}
 ul.r_context time{float: right;}
 
-
-
-
 #context_mid{margin: 30px 0; height: 200px;}
-.context_mid_t{width: 380px; height: 200px; background-color: #fff; float: left; }
+.context_mid_t{width: 380px; height: 200px; background-color: #fff; float: left; overflow: hidden; position: relative;}
+.context_mid_t img{width: 100%; height: auto;}
+.context_mid_t span{display: inline-block; position: absolute; background-color: rgba(0, 0, 0, 0.6);left: 0;top:200px;z-index: 2; width: 356px; height: 50px; overflow: hidden;padding: 5px 12px; font-weight: 100;}
+.context_mid_t span a{display: block; color: #fff;font-size: 14px; line-height: 26px; }
 
 #context_c{margin-top: 30px;}
 .context_c_left{width: 790px;}
 .context_c_right{width: 380px;}
-.c_1{width: 790px; height: 600px; margin-bottom: 30px; background-color: #fff;}
+.c_1{width: 750px; height: 500px; margin-bottom: 30px; padding: 5px 20px; background-color: #fff; overflow: hidden;}
+.c_1_title{height: 40px;float: left; width: 100%; margin-bottom: 20px;}
+.c_1_title a{display: inline-block; border-bottom: 3px #16a085 solid; line-height: 38px;}
+.c_1_tips{float: left; width: 354px; overflow: hidden;}
+.c_1_tips img{width: auto; height: 200px; border: 1px #ccc solid; padding: 1px;}
+.c_1_tips a{display: inline-block; width: 354px; height: 16px; overflow: hidden;line-height: 16px; margin: 20px 0 ;}
+.c_1_tips span{display: inline-block; color: #999; font-size: 12px; line-height: 20px; height: 100px; overflow: hidden;}
+#gd{display: inline-block; width: 66px; height: 36px; border-radius: 3px; background-color: #16a085; color: #fff; font-size: 14px; line-height: 36px; padding-left: 10px;}
+a#gd:hover{background-color: #366;}
 
+
+.c_1_list{float: left; width: 376px; margin-left: 20px; overflow: hidden;}
+.c_1_list img{height: 100px; width: 160px;float: left;}
+.c_1_list ul li{float: left; margin-bottom: 40px;}
+.c_1_list ul li >span{display: inline-block; float: left; margin-left: 10px; width: 206px; line-height: 20px; height: 40px; overflow: hidden;}
+.c_i_icons{float: left; margin-left: 10px; margin-top: 20px;}
+.c_i_icons span{font-size: 12px; color: #999; margin-right: 21px;}
 
 footer{width: 100%; height: 160px; background-color:#333; display: inline-block; margin-top: 20px; border-top: 1px #eaeaea solid;}
 #footer{width: 1200px; margin: 0 auto;}

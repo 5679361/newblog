@@ -1,26 +1,41 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Demo</title>
-        <link rel="stylesheet" href="../public/css/demo.css">
-    </head>
-    <body>
-        <div class="context_top_l">
-            <div class="l_banner">
-                <ul id="ul_banner">
-                    <li><a href="#"><img src="../public/images/123.jpg" alt=""></a><span>标题1</span></li>
-                    <li><a href="#"><img src="../public/images/123.jpg" alt=""><span>标题1</span></a><span>标题1</span></li>
-                    <li><a href="#"><img src="../public/images/123.jpg" alt=""></a><span>标题1</span></li>
-                    <li><a href="#"><img src="../public/images/123.jpg" alt=""></a><span>标题1</span></li>
-                </ul>
-            </div>
-            <div class="l_navs">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title></title>
+    <script type="text/javascript">
+
+    function ins() {
+        document.body.onmousemove = function(e) {
+            alert(e);
+            // if (!e) {
+            //     e = window.event;
+            // }
+            // else {
+            //     e.srcElement = e.target;
+            // }
+        };
+    };
+
+
+        // function init() {
+        //     document.body.onmousemove = function(e) {
+        //         if (!e) {
+        //             e = window.event;
+        //         }
+        //         else {
+        //             e.srcElement = e.target;
+        //         }
+        //         document.getElementById("divDebug").innerHTML = "mousemove (" + e.clientX + "," + e.clientY + ") srcElement=" + e.srcElement.tagName + "[" + e.srcElement.id + "]";
+        //     };
+        // }
+    </script>
+</head>
+<body onload="ins()">
+    <div id="root">
+    <div id="divDebug"></div>
+    <div id="div2">div</div>
+    <span id="span1">span</span>
+    <a href="#" id="link1">link</a>
+    </div>
     </body>
 </html>
