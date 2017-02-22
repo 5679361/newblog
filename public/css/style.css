@@ -64,7 +64,7 @@ ul.r_navs li.active{font-weight: bold; border-bottom: 1px #fff solid;}
 
 ul.r_context{padding: 15px;height: 230px; position: relative; overflow: hidden;}
 ul.r_context > li{position: absolute; width: 348px; }
-ul.r_context > li ul li{font-size: 12px; margin-bottom: 11px;width: 348px; height: 14px; /*这句是单行溢出省略*/overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+ul.r_context > li ul li{font-size: 12px; margin-bottom: 13px;width: 348px; height: 14px; /*这句是单行溢出省略*/overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 ul.r_context > li:first-child ul li:first-child a{font-weight: bold;}
 ul.r_context time{float: right;}
 
@@ -87,10 +87,9 @@ ul.r_context time{float: right;}
 #gd{display: inline-block; width: 66px; height: 36px; border-radius: 3px; background-color: #16a085; color: #fff; font-size: 14px; line-height: 36px; padding-left: 10px;}
 a#gd:hover{background-color: #366;}
 
-
 .c_1_list{float: left; width: 376px; margin-left: 20px; overflow: hidden;}
-.c_1_list img{height: 100px; width: 160px;float: left;}
-.c_1_list ul li{float: left; margin-bottom: 40px;}
+.c_1_list img{height: 90px; width: 160px;float: left;}
+.c_1_list ul li{float: left; margin-bottom: 23px;}
 .c_1_list ul li >span{display: inline-block; float: left; margin-left: 10px; width: 206px; line-height: 20px; height: 40px; overflow: hidden;}
 .c_i_icons{float: left; margin-left: 10px; margin-top: 20px;}
 .c_i_icons span{font-size: 12px; color: #999; margin-right: 21px;}
