@@ -34,3 +34,27 @@ for (let i = 0; i < 3; i++) {
         e.currentTarget.childNodes[3].style.top = '200px';
     }
 }
+
+//监听滚动条事件
+window.onscroll = function() {
+    let navs = document.getElementById('navs');
+    let maiden_context = document.getElementById('maiden_context');
+    if (scroll().top >= navs.offsetHeight*2) {
+        navs.style.position = 'fixed';
+        maiden_context.style.marginTop = '110px';
+    }else {
+        navs.style.position = 'relative';
+        maiden_context.style.marginTop = '30px';
+    }
+};
+
+function scroll() {
+    return {
+        top: window.pageYOffset ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop || 0,
+        left: window.pageXOffset ||
+        document.documentElement.scrollLeft ||
+        document.body.scrollLeft || 0
+    };
+}

@@ -18,12 +18,19 @@ a:hover{color:#16a085;}
 input:-webkit-autofill{-webkit-box-shadow: 0 0 0px 1000px white inset;-webkit-text-fill-color: #333;}
 
 /* nav*/
+.navs{width: 100%; height: 80px; background-color:#2f2f2f; position: relative; left: 0; top: 0; z-index: 99}
 #maiden_logo{float: left;width: 100px;text-align: center;}
-#maiden_nav{width: auto; height: 80px;background-color: #2f2f2f; }
+#maiden_navs{width: auto; height: 80px;background-color: #2f2f2f; }
 ul.maiden_nav{float: left; }
-ul.maiden_nav > li{float: left;height: 80px; }
+ul.maiden_nav > li{float: left;height: 80px; position: relative;}
 ul.maiden_nav > li > a{color: #fff; font-size: 18px; display: inline-block; line-height: 80px; padding: 0 20px; }
 ul.maiden_nav > li > a:hover{background-color: #555;}
+
+ul.maiden_nav > li ul{position: absolute;display: none; /*display: none;*/}
+ul.maiden_nav > li ul li{text-align: center;}
+ul.maiden_nav > li ul li a{color: #fff; font-size: 16px; display: inline-block;line-height: 40px;background-color: rgba(47, 47, 47, 1); width: 150px; height: 40px;}
+ul.maiden_nav > li ul li a:hover{background-color: rgba(47, 47, 47, 0.8);}
+
 /* search */
 #maiden_nav_search{width: 300px; float: right; margin-top: 20px;}
 #maiden_nav_search input{border: 2px #fff solid; padding: 0 10px; font-size: 14px; height: 40px; color: #16a085; }
@@ -105,6 +112,8 @@ a#gd:hover{background-color: #366;}
 .cr_md_items{padding: 10px 20px;}
 .cr_md_items a{background-color: #ddd; color: #999;}
 .cr_md_items a:hover{background-color: #16a085; color: #fff;}
+
+.fa-angle-down,.fa-html5,.fa-group{color: #fff;}
 
 footer{width: 100%; height: 160px; background-color:#333; display: inline-block; margin-top: 20px; border-top: 1px #eaeaea solid;}
 #footer{width: 1200px; margin: 0 auto;}
