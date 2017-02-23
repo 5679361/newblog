@@ -1,41 +1,48 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" >
-<head>
-    <title></title>
-    <script type="text/javascript">
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Demo</title>
+        <link rel="stylesheet" href="../public/css/style.css">
+        <style media="screen">
+            li{float: left;}
+            li a{opacity: 0.6;}
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="#">第一</a></li>
+            <li><a href="#">第一</a></li>
+            <li><a href="#">第一</a></li>
+            <li><a href="#">第一</a></li>
+            <li><a href="#">第一</a></li>
+            <li><a href="#">第一</a></li>
+            <li><a href="#">第一</a></li>
+        </ul>
+        <script type="text/javascript">
+            let atags = document.getElementsByTagName('a');
+            for (var i = 0; i < atags.length; i++) {
+                //获取当前a标签的opacity值
+                let opacity_value = document.defaultView.getComputedStyle(atags[i], null).opacity;
+                atags[i].onmouseover = function() {
+                    atags[i].style.opacity = opacity_value*0.06;
+                };
+                atags[i].onmouseout = function() {
+                    atags[i].style.opacity = opacity_value;
+                };
 
-    function ins() {
-        document.body.onmousemove = function(e) {
-            alert(e);
-            // if (!e) {
-            //     e = window.event;
+            }
+            // atags[1].style.opacity = 0.1;
+            console.log(document.defaultView.getComputedStyle(atags[0], null).opacity);
+            // for (var i = 0; i < atags.length; i++) {
+            //     console.log(atags[i].style.opacity);
             // }
-            // else {
-            //     e.srcElement = e.target;
+
+            // for (var i = 0; i < atags.length; i++) {
+            //     atags[i].onmouseover = function() {
+            //         console.log(atags[i]);
+            //     }
             // }
-        };
-    };
-
-
-        // function init() {
-        //     document.body.onmousemove = function(e) {
-        //         if (!e) {
-        //             e = window.event;
-        //         }
-        //         else {
-        //             e.srcElement = e.target;
-        //         }
-        //         document.getElementById("divDebug").innerHTML = "mousemove (" + e.clientX + "," + e.clientY + ") srcElement=" + e.srcElement.tagName + "[" + e.srcElement.id + "]";
-        //     };
-        // }
-    </script>
-</head>
-<body onload="ins()">
-    <div id="root">
-    <div id="divDebug"></div>
-    <div id="div2">div</div>
-    <span id="span1">span</span>
-    <a href="#" id="link1">link</a>
-    </div>
+        </script>
     </body>
 </html>

@@ -24,12 +24,12 @@ input:-webkit-autofill{-webkit-box-shadow: 0 0 0px 1000px white inset;-webkit-te
 ul.maiden_nav{float: left; }
 ul.maiden_nav > li{float: left;height: 80px; position: relative;}
 ul.maiden_nav > li > a{color: #fff; font-size: 18px; display: inline-block; line-height: 80px; padding: 0 20px; }
-ul.maiden_nav > li > a:hover{background-color: #555;}
+ul.maiden_nav > li > a:hover{opacity: 0.6}
 
-ul.maiden_nav > li ul{position: absolute;display: none; /*display: none;*/}
+ul.maiden_nav > li ul{position: absolute;display: none; top: 78px;width: 97%; border-radius: 3px; border: 2px solid #2f2f2f;}
 ul.maiden_nav > li ul li{text-align: center;}
-ul.maiden_nav > li ul li a{color: #fff; font-size: 16px; display: inline-block;line-height: 40px;background-color: rgba(47, 47, 47, 1); width: 150px; height: 40px;}
-ul.maiden_nav > li ul li a:hover{background-color: rgba(47, 47, 47, 0.8);}
+ul.maiden_nav > li ul li a{color: #2f2f2f; font-size: 12px; display:block;line-height: 30px;/*background-color: rgba(47, 47, 47, 1);*/height: 30px;}
+ul.maiden_nav > li ul li a:hover{background-color: #2f2f2f; color: #fff;}
 
 /* search */
 #maiden_nav_search{width: 300px; float: right; margin-top: 20px;}
@@ -59,7 +59,7 @@ ul.maiden_nav > li ul li a:hover{background-color: rgba(47, 47, 47, 0.8);}
 .l_banner ul li a{display: inline-block;}
 .l_banner ul li a img{width: 790px; height: auto;}
 .l_banner ul li span{position: absolute;left: 0;top: 260px; display: inline-block; width: 790px; height: 40px; background-color:rgba(0, 0, 0, 0.6);(); text-align: center; line-height: 40px; color: #efefef;}
-.l_navs{position: absolute; top: 0; left: 10px; z-index: 99;}
+.l_navs{position: absolute; top: 0; left: 10px; z-index: 98;}
 .l_navs span{display: inline-block; width: 20px; height: 10px; margin: 0 3px; background-color: #efefef;}
 .l_navs span:hover{opacity: 0.8}
 span.n{background-color: #396;}
@@ -68,10 +68,12 @@ span.n{background-color: #396;}
 ul.r_navs{height: 36px; border-bottom: 1px #efefef solid;}
 ul.r_navs li{float: left; font-size: 15px; padding:8px 10px; border: 1px #efefef solid;}
 ul.r_navs li{margin-top: -1px; margin-left: -1px;}
+ul.r_navs li:hover{cursor: pointer;}
 ul.r_navs li.active{font-weight: bold; border-bottom: 1px #fff solid;}
 
 ul.r_context{padding: 15px;height: 230px; position: relative; overflow: hidden;}
 ul.r_context > li{position: absolute; width: 348px; }
+.actives{left:380px;}
 ul.r_context > li ul li{font-size: 12px; margin-bottom: 13px;width: 348px; height: 14px; /*这句是单行溢出省略*/overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 ul.r_context > li:first-child ul li:first-child a{font-weight: bold;}
 ul.r_context time{float: right;}
