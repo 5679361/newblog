@@ -10,39 +10,15 @@
         </style>
     </head>
     <body>
-        <ul>
-            <li><a href="#">第一</a></li>
-            <li><a href="#">第一</a></li>
-            <li><a href="#">第一</a></li>
-            <li><a href="#">第一</a></li>
-            <li><a href="#">第一</a></li>
-            <li><a href="#">第一</a></li>
-            <li><a href="#">第一</a></li>
-        </ul>
+        <button type="button" name="button"></button>
+        <button type="button" name="button"></button>
+        <button type="button" name="button"></button>
+        <button type="button" name="button"></button>
+        <!-- 分隔符 -->
         <script type="text/javascript">
-            let atags = document.getElementsByTagName('a');
-            for (var i = 0; i < atags.length; i++) {
-                //获取当前a标签的opacity值
-                let opacity_value = document.defaultView.getComputedStyle(atags[i], null).opacity;
-                atags[i].onmouseover = function() {
-                    atags[i].style.opacity = opacity_value*0.06;
-                };
-                atags[i].onmouseout = function() {
-                    atags[i].style.opacity = opacity_value;
-                };
-
+            window.onresize = function() {
+                console.log('变');
             }
-            // atags[1].style.opacity = 0.1;
-            console.log(document.defaultView.getComputedStyle(atags[0], null).opacity);
-            // for (var i = 0; i < atags.length; i++) {
-            //     console.log(atags[i].style.opacity);
-            // }
-
-            // for (var i = 0; i < atags.length; i++) {
-            //     atags[i].onmouseover = function() {
-            //         console.log(atags[i]);
-            //     }
-            // }
         </script>
     </body>
 </html>

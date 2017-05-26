@@ -62,10 +62,15 @@ function scroll() {
 
 //获取有二级菜单的li标签文档id对象
 let navs_ws = $('navs_ws');
-navs_ws.onmouseover = function() {
-    // nextElementSibling获取当前元素的后一个兄弟元素
+// navs_ws.onmouseover = function() {
+//     // nextElementSibling获取当前元素的后一个兄弟元素
+//     navs_ws.nextElementSibling.style.display = 'inline-block';
+// };
+navs_ws.addEventListener('mouseover', function(e) {
     navs_ws.nextElementSibling.style.display = 'inline-block';
-};
+});
+
+
 navs_ws.onmouseout = function() {
     // nextElementSibling获取当前元素的后一个兄弟元素
     navs_ws.nextElementSibling.style.display = 'none';
@@ -89,7 +94,7 @@ for (let i = 0; i < r_navs.length; i++) {
                     continue;
             }else {
                     r_context[y].style.left = '380px';
-                    r_navs[y].className = '';
+                    r_navs[y].className = ' ';
             };
         };
     };
@@ -104,7 +109,7 @@ for (let i = 0; i < l_navs.length; i++) {
             if (i==y) {
                 l_navs[y].className = 'n';
             }else {
-                l_navs[y].className = '';
+                l_navs[y].className = ' ';
             };
         };
     };

@@ -5,7 +5,7 @@
 @charset "UTF-8";
 *{margin: 0;padding: 0;font-family: 'Microsoft Yahei';color:#555;}
 ul,li,input{list-style: none;}
-a{text-decoration: none;}
+a{text-decoration: none; transition: 0.6s;}
 input,button,select,textarea{outline:none; border: 0;}
 body{background-color: #f6f6f6;}
 a:hover{color:#16a085;}
@@ -26,7 +26,7 @@ ul.maiden_nav > li{float: left;height: 80px; position: relative;}
 ul.maiden_nav > li > a{color: #fff; font-size: 18px; display: inline-block; line-height: 80px; padding: 0 20px; }
 ul.maiden_nav > li > a:hover{opacity: 0.6}
 
-ul.maiden_nav > li ul{position: absolute;display: none; top: 78px;width: 97%; border-radius: 3px; border: 2px solid #2f2f2f;}
+ul.maiden_nav > li ul{position: absolute;display: none; top: 78px; left: 0;width: 97%; border-radius: 3px; border: 2px solid #2f2f2f; background-color: #ccc;}
 ul.maiden_nav > li ul li{text-align: center;}
 ul.maiden_nav > li ul li a{color: #2f2f2f; font-size: 12px; display:block;line-height: 30px;/*background-color: rgba(47, 47, 47, 1);*/height: 30px;}
 ul.maiden_nav > li ul li a:hover{background-color: #2f2f2f; color: #fff;}
@@ -54,7 +54,7 @@ ul.maiden_nav > li ul li a:hover{background-color: #2f2f2f; color: #fff;}
 /* 焦点图 */
 .context_top_l{position: relative; width: 790px; height: 300px; overflow: hidden; margin-right: 30px;}
 .l_banner{position:absolute; width:790px; height: 300px;}
-.l_banner ul{position:absolute; width: 3160px; height: 300px; z-index: 2;}
+.l_banner ul{position:absolute; width: 3160px; height: 300px; z-index: 2; }
 .l_banner ul li{float: left; position: relative; width: 790px; height: 300px; overflow: hidden;}
 .l_banner ul li a{display: inline-block;}
 .l_banner ul li a img{width: 790px; height: auto;}
